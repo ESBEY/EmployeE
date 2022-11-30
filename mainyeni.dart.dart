@@ -53,6 +53,8 @@ class _MyHomePageState extends State<MyHomePage> {
             new IconButton(icon: new Icon(Icons.schedule_rounded), onPressed:_decrementCounter,color: Colors.red,iconSize: 50,),
            Text(
              'Çalışma Saatlerim',
+             style: TextStyle(color: Colors.white,fontFamily: 'Arial',fontSize: 15),
+             
 
            ),
             Text(
@@ -64,6 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
             new IconButton(icon: new Icon(Icons.folder_open_rounded), onPressed: _decrementCounter,color:Colors.red,iconSize: 50,),
             Text(
               'Dökümanlarım',
+              style: TextStyle(color: Colors.white,fontFamily: 'Arial',fontSize: 15),
 
             ),
         ]
@@ -72,6 +75,8 @@ class _MyHomePageState extends State<MyHomePage> {
 
 
         ),
+      backgroundColor: Colors.white10,
+      
 
       );
 
