@@ -7,7 +7,7 @@ class Profile extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Center(
         child: Text(
-          'Profile Page',
+          'Profil Sayfası',
           style: TextStyle(fontSize: 50,color: Colors.red)
         ),
       ),

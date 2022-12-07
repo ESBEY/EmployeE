@@ -12,7 +12,7 @@ class Logout extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Text(
-              'Do You Want To Log Out?',
+              'Çıkış yapmak istiyor musun ?',
               style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,

@@ -7,7 +7,7 @@ class Settings extends StatelessWidget {
       backgroundColor: Colors.black,
       body: Center(
         child: Text(
-            'Settings Page',
+            'Ayarlar Sayfası',
             style: TextStyle(fontSize: 50,color: Colors.red)
         ),
       ),

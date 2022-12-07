@@ -16,7 +16,7 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return WillPopScope(child: Scaffold(
+    return Scaffold(
       body: Center(
           child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
             Row(
@@ -38,7 +38,7 @@ class _HomeState extends State<Home> {
             ),
           ])),
       backgroundColor: Colors.black,
-    ), onWillPop: () async => false);
+    );
   }
 
   Widget buildIconButton(IconData icon, String title, void Function()? action,double _fontSize) {
