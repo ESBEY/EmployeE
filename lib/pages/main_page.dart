@@ -1,5 +1,6 @@
-import 'package:employee/login.dart';
-import 'package:employee/menu.dart';
+import 'package:employee/pages/login.dart';
+import 'package:employee/pages/home.dart';
+import 'package:employee/pages/menu.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
@@ -13,7 +14,7 @@ class MainPage extends StatelessWidget {
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (context, snapshot) {
           if (snapshot.hasData) {
-            return MyMenu();
+            return Menu();
           } else {
             return MyLogin();
           }

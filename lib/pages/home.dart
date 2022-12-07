@@ -1,18 +1,18 @@
 // ignore_for_file: prefer_const_constructors
 // ignore_for_file: prefer_const_literals_to_create_immutables
-import 'package:employee/login.dart';
+import 'package:employee/pages/login.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
-class MyMenu extends StatefulWidget {
+class Home extends StatefulWidget {
 
-  const MyMenu({Key? key}) : super(key: key);
+  const Home({Key? key}) : super(key: key);
 
   @override
-  _MenuState createState() => _MenuState();
+  _HomeState createState() => _HomeState();
 }
 
-class _MenuState extends State<MyMenu> {
+class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
@@ -40,12 +40,6 @@ class _MenuState extends State<MyMenu> {
               'Dökümanlarım',
               style: TextStyle(color: Colors.white,fontFamily: 'Arial',fontSize: 15),
 
-            ),
-            SizedBox(height: 100,),
-            IconButton(onPressed: () {FirebaseAuth.instance.signOut();}, icon: Icon(Icons.arrow_back, color: Colors.red,),iconSize: 50,),
-            Text(
-              'Geri Dön',
-              style: TextStyle(color: Colors.white,fontFamily: 'Arial',fontSize: 15)
             ),
         ]
             )

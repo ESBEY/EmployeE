@@ -1,7 +1,7 @@
-import 'package:employee/main_page.dart';
-import 'package:employee/menu.dart';
+import 'package:employee/pages/main_page.dart';
+import 'package:employee/pages/home.dart';
 import 'package:flutter/material.dart';
-import 'package:employee/login.dart';
+import 'package:employee/pages/login.dart';
 import 'package:firebase_core/firebase_core.dart';
 
 void main() async {
