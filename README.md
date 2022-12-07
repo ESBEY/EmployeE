@@ -1,16 +1,7 @@
-# employee
+# EmployeE
+İşçi-İşveren Planlama Programı
+İlk Prototip
 
-A new Flutter project.
+![image](https://user-images.githubusercontent.com/55317471/204941205-9d6cf364-3156-4fd4-afa9-1b4f91798d47.png)
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](https://user-images.githubusercontent.com/55317471/204941218-ff580316-0bce-47bf-89fc-8b3e3a5174b3.png)
