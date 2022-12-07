@@ -16,40 +16,45 @@ class _HomeState extends State<Home> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return WillPopScope(child: Scaffold(
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-
-            IconButton(icon: Icon(Icons.schedule_rounded),color: Colors.red,iconSize: 50, onPressed: (){},),
-           Text(
-             'Çalışma Saatlerim',
-             style: TextStyle(color: Colors.white,fontFamily: 'Arial',fontSize: 15),
-             
-
-           ),
-            Text(
-                ''
+          child: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                buildIconButton(Icons.doorbell_outlined, 'Duyurular', () {},20),
+                buildIconButton(Icons.schedule_rounded, 'Çalışma Saatlerim', () {},15),
+                buildIconButton(Icons.folder_open_rounded, 'Dökümanlarım', () {},15),
+              ],
             ),
-            Text(
-                ''
+            SizedBox(height: 50,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                buildIconButton(Icons.calendar_month_rounded, 'Planım', () {},20),
+                buildIconButton(Icons.sunny, 'İzin Günlerim', () {},20),
+                buildIconButton(Icons.attach_money_rounded, 'Maaşım', () {},20),
+              ],
             ),
-            IconButton(icon: Icon(Icons.folder_open_rounded), onPressed: (){},color:Colors.red,iconSize: 50,),
-            Text(
-              'Dökümanlarım',
-              style: TextStyle(color: Colors.white,fontFamily: 'Arial',fontSize: 15),
+          ])),
+      backgroundColor: Colors.black,
+    ), onWillPop: () async => false);
+  }
 
-            ),
-        ]
-            )
+  Widget buildIconButton(IconData icon, String title, void Function()? action,double _fontSize) {
+    return Column(children: [
+      IconButton(
+        icon: Icon(icon),
+        color: Colors.red,
+        iconSize: 50,
+        onPressed:action,
 
-
-
-        ),
-      backgroundColor: Colors.white10,
-      
-
-      );
+      ),
+      Text(
+        title,
+        style:
+        TextStyle(color: Colors.white, fontFamily: 'Arial', fontSize: _fontSize),
+      ),
+    ]);
   }
 }

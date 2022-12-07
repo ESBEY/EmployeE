@@ -5,6 +5,7 @@ class Logout extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.black,
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -16,20 +17,14 @@ class Logout extends StatelessWidget {
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
                   color: Colors.red,
-                  shadows: <Shadow>[
-                    Shadow(
-                      offset: Offset(3.0, 3.0),
-                      blurRadius: 10.0,
-                      color: Colors.redAccent,
-                    ),
-                  ]
+
               ),
             ),
             SizedBox(height: 20,),
             FloatingActionButton(
               child: Icon(
                 Icons.exit_to_app,
-                color: Colors.white,
+                color: Colors.black,
                 size: 35,
               ),
               onPressed: () {FirebaseAuth.instance.signOut();},

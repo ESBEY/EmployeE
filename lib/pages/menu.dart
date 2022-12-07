@@ -37,8 +37,8 @@ class _MenuState extends State<Menu> {
           padding: const EdgeInsets.symmetric(horizontal: 15.0, vertical: 12),
           child: GNav(
             backgroundColor: Colors.black,
-            color: Colors.white,
-            activeColor: Colors.white,
+            color: Colors.red,
+            activeColor: Colors.red,
             tabBackgroundColor: Colors.grey.shade800,
             gap: 10,
             onTabChange: _navigateBottomBar,

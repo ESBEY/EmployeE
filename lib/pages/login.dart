@@ -36,17 +36,16 @@ class _MyLoginState extends State<MyLogin> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey[200],
+      backgroundColor: Colors.black,
       body:SafeArea(
         child: Center(
           child: SingleChildScrollView(
-            
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Icon(
                   Icons.account_circle,
-                  color: Colors.deepPurple,
+                  color: Colors.red,
                   size: 250,
                 ),
                 SizedBox(height: 25,),
@@ -54,7 +53,7 @@ class _MyLoginState extends State<MyLogin> {
                   'Hoşgeldiniz!',
                   style: GoogleFonts.bebasNeue(
                     fontSize: 70,
-                  color: Colors.deepPurple,
+                  color: Colors.red,
                   ),
                 ),
                 SizedBox(height: 10,),
@@ -62,7 +61,7 @@ class _MyLoginState extends State<MyLogin> {
                   'Giriş yapabilirsiniz.',
                   style: TextStyle(
                     fontSize: 20,
-                  color: Colors.deepPurple,
+                  color: Colors.red,
                   ),
                 ),
                 SizedBox(height: 20,),
@@ -70,8 +69,8 @@ class _MyLoginState extends State<MyLogin> {
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      border: Border.all(color: Colors.deepPurple),
+                      color: Colors.white10,
+                      border: Border.all(color: Colors.red, width: 1.5),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Padding(
@@ -79,13 +78,13 @@ class _MyLoginState extends State<MyLogin> {
                       child: TextField(
                         controller: _controllerEmail,
                         style: TextStyle(
-                          color: Colors.deepPurple,
+                          color: Colors.red,
                           ),
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: 'Email',
                           hintStyle: TextStyle(
-                            color: Colors.deepPurple,
+                            color: Colors.red,
                           ),
                         ),
                       ),
@@ -97,8 +96,8 @@ class _MyLoginState extends State<MyLogin> {
                   padding: const EdgeInsets.symmetric(horizontal: 25.0),
                   child: Container(
                     decoration: BoxDecoration(
-                      color: Colors.grey[200],
-                      border: Border.all(color: Colors.deepPurple),
+                      color: Colors.white10,
+                      border: Border.all(color: Colors.red, width: 1.5),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: Padding(
@@ -107,13 +106,13 @@ class _MyLoginState extends State<MyLogin> {
                         controller: _controllerPassword,
                         obscureText: true,
                         style: TextStyle(
-                          color: Colors.deepPurple,
+                          color: Colors.red,
                         ),
                         decoration: InputDecoration(
                           border: InputBorder.none,
                           hintText: 'Şifre',
                           hintStyle: TextStyle(
-                            color: Colors.deepPurple,
+                            color: Colors.red,
                           ),
                         
                         ),
@@ -129,14 +128,15 @@ class _MyLoginState extends State<MyLogin> {
                     child: Container(
                       padding: EdgeInsets.all(20),
                       decoration: BoxDecoration(
-                        color: Colors.deepPurple,
+                        color: Colors.white10,
+                        border: Border.all(color: Colors.red,width: 1.5),
                         borderRadius: BorderRadius.circular(12),
                         ),
                       child: Center(
                         child: Text(
                           'Giriş Yap',
                           style: TextStyle(
-                            color: Colors.grey[200],
+                            color: Colors.red,
                             fontWeight: FontWeight.bold,
                             fontSize: 18,
                           ),
