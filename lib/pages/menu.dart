@@ -1,9 +1,12 @@
 // ignore_for_file: prefer_const_constructors
 // ignore_for_file: prefer_const_literals_to_create_immutables
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:employee/pages/home_director.dart';
 import 'package:employee/pages/logout.dart';
 import 'package:employee/pages/home.dart';
 import 'package:employee/pages/profile.dart';
 import 'package:employee/pages/settings.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 
@@ -24,9 +27,9 @@ class _MenuState extends State<Menu> {
   }
 
   final List<Widget> _pages = [
-    Home(),
+    HomeDirector(),
     Profile(),
-    Settings(),
+    SettingsPage(),
     Logout(),
   ];
 
